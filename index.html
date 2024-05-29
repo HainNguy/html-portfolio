@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,4 +24,178 @@
     <a href="./public/about.html">About Me</a>
     <a href="./public/contact.html">Contact Me</a>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai Nguyen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+            height: 60px; /* Fixed height for the header */
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin: 0;
+
+            line-height: 1;
+            /* Ensure the text is vertically centered */
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .night-theme {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .night-theme h1 {
+
+            color: #fff;
+
+        }
+
+        #toggle-button {
+
+            background-color: #333;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hai Nguyen</h1>
+        <button id="toggle-button" onclick="toggleNightMode()">Dark Mode</button>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h1>About Me</h1>
+
+            
+            <p>Hello, my name is Hai. I am studying Computer Science and Physics at LMU Munich. Currently, I am in the
+                5th semester, during which I have achieved the following:</p>
+            <ul>
+                <li>Fundamental software techniques ranging from software specification to software evolution, including
+                    UML models, Agile development methods, Scrum, project management, design patterns, Git, CI/CD,
+                    testing techniques, and DevOps.</li>
+                <li>Participation in the software development internship at LMU: development of a board game called
+                    "Love Letter" in Java (object-oriented programming). Further details are available on my GitHub
+                    page.</li>
+                <li>Various Java personal projects.</li>
+                <li>Basics of the database system and database design, including SQL.</li>
+            </ul>
+
+            <p>My hobbies revolve mainly around table tennis, badminton, and swimming. In school, I successfully
+                participated in various competitions in badminton and table tennis, winning some of them. For several
+                years, I was a member of the FTM Schwabing club, where I actively played badminton.</p>
+
+            <p>In addition to my athletic activities, I have a passionate interest in astronomy and cosmology. I was a
+                member of the Vietnamese Association for Astronomy and Cosmology, achieving outstanding performance in
+                courses related to astronomy and astrophysics.</p>
+
+            <p>Regarding my academic interests, I focus on software engineering, problem-solving with software, and
+                quantum computing. These subjects fascinate me, and I actively engage with them.</p>
+        </section>
+
+        <section id="portfolio">
+            <!-- <h1>Portfolio</h1> -->
+            <h3>My Projects</h3>
+            <p>
+                <a href="https://github.com/HainNguy/love_letter_game">Love Letter Game</a> <br>
+                <hr>
+                <img src="./assets/image/love-letter.png" alt="a image of love letter game rule" width="450"><br>
+                <img src="./assets/image/game-console.png" alt="game on console" width="450">
+                <hr>
+            </p>
+            <p>
+                <a href="index.html">This website</a>
+                <hr>
+                <a href="https://github.com/HainNguy/email_generator">Email API</a> <br>
+                <hr>
+                <img src="./assets/image/emailAPI.png" alt="email api's use case description" width="550">
+            </p>
+            <hr>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+
+            <p>Tel: +49 17645978065</p>
+            <p>Email: hnn.bernstein@gmail.com</p>
+
+        </section>
+    </div>
+
+    <script>
+        // Function to toggle night mode
+        function toggleNightMode() {
+            document.body.classList.toggle('night-theme');
+        }
+    </script>
+
+</body>
+
 </html>
